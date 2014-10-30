@@ -1,0 +1,25 @@
+{
+  "id":"cfdd4dbf-9e80-45a7-b59e-daf52d14fc3a",
+  "name":"roboto",
+  "description": "some awesome design",
+  
+  "thumbnail-urls":[
+    
+  ],
+  
+  "authors":[
+   {
+    "name":"Mark kaosat-dev",
+    "url": "???"
+   }
+  ],
+  "tags": ["youmagine", "superduperdesign"],
+  "licenses":[
+    "GPLV3",
+    "MIT"
+  ],
+  
+  "metadata":{
+    "state":"design"
+  }
+}

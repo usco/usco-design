@@ -1,0 +1,32 @@
+<!--youmagine (current version)
+ specific for the first prototypes, storage back end will be abstracted later
+-->
+<polymer-element name="usco-design"  attributes="url">
+  <script>
+    Polymer("usco-design",{
+      url:null,
+      bom:null
+      urlChanged:function(){
+        documentsUrl: this.url + "documents.json";//https://www.youmagine.com/designs/beer-opener/documents.json
+      },
+      bomChanged:function(){
+      
+      },
+      getMeshesFromBom:function(){
+        var meshUrls = [];
+        //TODO : we need to match parts to their meshes ?
+        for(var i = 0; i< this.bom.length;i++)
+        {
+          var bomEntry = this.bom[i];
+          //filtering VERY specific to current json structure, not ideal
+          //we also filter out anything with "build plate" in it
+          if(bomEntry.file_contains_3d_model && (bomEntry.name.toLowerCase().indexOf( "build plate" )==-1) )
+          {
+            var meshUrl = bomEntry.file.url;
+            meshUrls.push( meshUrls );
+          }
+        }
+      }      
+    });
+    </script>
+</polymer>
