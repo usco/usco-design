@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Test</title>
+      <script src="components/webcomponentsjs/webcomponents.js"></script>
+      <link rel="import" href="usco-design.html">
+  </head>
+<body>
+  <usco-design url="https://www.youmagine.com/designs/the-raptor-hand-by-e-nable/"></usco-design>
+
+  <script>
+      window.addEventListener('polymer-ready', function() {
+        var uscoDesign = document.querySelector('usco-design');
+        console.log("uscoDesign",uscoDesign);
+    });
+  </script>  
+</body>
+</html>
