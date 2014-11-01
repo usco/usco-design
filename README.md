@@ -2,6 +2,45 @@ Experimental wrappers around "designs" /things/physibles /Etc
 and thoughts about design configuration files (bom, assemblies, build instructrions etc)
 
 
+put simply:
+===========
+usco-design is a wrapper around :
+ - n number of files: stl, amf, scad etc
+ - configuration files
+ - is also representing a git repo (or similar)
+ 
+ should:
+ - support versioning
+ - forking
+ 
+how to handle parametric designs:
+=================================
+
+Questions:
+----------
+- have a "main" entry like in node's package.json files that points to 
+the main script ?
+- for custom element wrapping , how do we expose attributes ?
+ * the user either creates them manually
+ * or selects what parameters to take (generation of custom element)
+ * somehow parse parameters from the scad/jscad/coscad files ?
+ * attribute names alone : 
+   - are they good enough ? do we brute force regeneration of 
+ the design if any of them changes ?
+   - experimental "future version"  has partial regeneration but this can not
+   be used for all cases
+ 
+See more thougts about custom elements below
+
+
+Packaging a design as custom element
+------------------------------------
+Advantages:
+ - dynamic (change an attribute, design is regenerated)
+ - using proxy pattern, can be used both for client side & server side generation
+ - easy to create UI for
+ 
+
 configuration files
 ===================
 - similar to a package manager's json files in a lot of ways (see npm , bower etc)
@@ -34,12 +73,20 @@ give parts numbers, but they do not contain positioning data etc
 
 notion of "features" of parts
 -------------------- --------
-- (parametric, reuse etc)
+- (parametric, reuse etc) : a feature is a "governing" attribute:  it is bad practice
+to expose too many parameters if a single one can be used to account for the various 
+possible variations
+
 
 user friendly
 =============
 
-if bom, assembly etc files are missing ask the user if he/she
+In the end, it is just a set of files, a wrapper ui(s?) to make it accessible
+to end users should be relatively easy to do
+
+Questions:
+---------
+- if bom, assembly etc files are missing ask the user if he/she
 wants to add them ?
 
 
@@ -47,6 +94,7 @@ more technical
 ==============
 - redundant hierarchy of packages like npm ...
 - or flat like bower ?
+
 
 Thoughts on data structures: 
 ============================
