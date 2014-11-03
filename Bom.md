@@ -12,7 +12,6 @@ of each to print ?)
 - amounts vs lengths vs weight etc :
   * both are needed: they describe different things: the size of each "stuff"
   * even better: lengths, weights should describe atomic stuff
- 
 
 - local vs global ids:
  * both are needed : local ids to reference things within the local context
@@ -22,8 +21,54 @@ of each to print ?)
 a bolt etc,  or a composite (another composite etc), see 
 https://github.com/garyhodgson/thing-tracker-network/wiki/Ideas-for-BOMs,-Sub-assemblies-and-Parts
 
-- alternatives: how to handle alternative parts:
+- alternatives: how to handle alternative parts ?
  * ex : left palm/right palm
+
+- parameters for parametric designs:
+  * how to handle pre-generated stls from parametric designs vs the parametric designs with 
+a given set of params ?
+  * parts which use the same parametric design #with different parameters# need different 
+
+- gcode/machine presets:
+  * this should be optional
+  * this is metadata, a very specific , should be treated as such
+  * ideally , they should be specified in the bom entry for a specific part : different
+  contexts == different printing/gcode settings 
+
+- parts libraries: extremely important , see parts librairies section in this document
+
+- the thing-tracker spec already has a lot of these things and is adaptable: DO NOT reinvent
+the wheel
+ * ttn is allready adopted 
+ * spec can still be updated at this stage
+ * lots of sane design decisions
+ * "Bolts" librairy will be available through it: see below
+ * https://github.com/garyhodgson/thing-tracker-network/wiki/Conventions-and-Guidelines 
+
+
+Part librairies:
+================
+- ideally a bom should contain references to data about all sorts of parts, some printed
+some not
+- a lot of parts are standard based and somewhat immutable (bolts, nuts), the BOLTS
+librairy http://www.bolts-library.org/en/index.html already has most of the data, models, 
+and "bindings" (openscad, freecad etc) that are needed
+
+
+Example data structure:
+=======================
+
+      {
+         "id":15,
+         "title":"Palm",
+         "version":"2.2.0",
+         "description":"Right Palm",
+         "amount": 1,
+         "unit":"EA",
+         "url":"palm.scad",
+         "parameters":"{orientation:"Right",innerSize:25}"
+      }
+
 
 Tooling:
 ========
