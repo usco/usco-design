@@ -1,0 +1,162 @@
+{"bom":
+  [
+    {
+       "id":0,
+       "title": "Velcro",
+       "description":"Velcro, double-sided (2” wide)",
+       "amount": 4,
+       "unit":"feet",
+       "url":,
+    },
+    {
+       "id":1,
+       "title": "Spectra line",
+       "description":"Non-flexible nylon lift cord or braided fishing line ('Spectra line')",
+       "amount": 8,
+       "unit":"feet",
+       "url":,
+    },
+    {
+       "id":2,
+       "title": "Firm Foam Padding 5.75 inch wide",
+       "description":"Firm Foam Padding (5 ¾” wide) ",
+       "amount": 12,
+       "unit":"inch",
+       "url":,
+    },
+    {
+       "id":3,
+       "title":"M3 hex screw",
+       "description":"Tensioner screw",
+       "amount": 5,
+       "url":""
+    },
+    {
+       "id":4,
+       "title":"Palm vecro attachment",
+       "description":"Palm velcro attachment screws with stop nuts ",
+       "amount": 3,
+       "url":""
+    },
+    {
+       "id":5,
+       "title":"Lee Tippi Micro Gel",
+       "description":"Lee Tippi Micro Gel Fingertip Grips (as shown in photo, optional)",
+       "amount": 5,
+       "url":""
+    },
+    {
+       "id":6,
+       "title":"Finger_snap_pin",
+       "description":"Finger snap pin , to attach fingers",
+       "amount": 5,
+       "version":"0.0.1",
+       "url":""
+    },
+    {
+       "id":7,
+       "title":"Finger Tip Long",
+       "description":"Finger tip, long",
+       "amount": 1,
+       "version":"0.0.1",
+       "url":""
+    },
+    {
+       "id":8,
+       "title":"Finger Tip Medium",
+       "description":"Finger tip, medium",
+       "amount": 3,
+       "version":"0.0.1",
+       "url":""
+    },
+    {
+       "id":9,
+       "title":"Gauntlet",
+       "description":"Gauntlet",
+       "amount": 1,
+       "version":"0.0.1",
+       "url":""
+    },
+    {
+       "id":10,
+       "title":"Hinge Cap",
+       "description":"Hinge Caps",
+       "amount": 1,
+       "version":"0.0.1",
+       "url":""
+    },
+    {
+       "id":11,
+       "title":"Hinge Pin",
+       "description":"Hinge Pins",
+       "amount": 1,
+       "version":"0.0.1",
+       "url":""
+    },
+    {
+       "id":12,
+       "title":"Knuckle Pin",
+       "description":"Knuckle Pins",
+       "amount": 1,
+       "version":"0.0.1",
+       "url":""
+    },
+    {
+       "id":13,
+       "title":"Left Palm",
+       "description":"Left Palm",
+       "amount": 1,
+       "version":"2.2.0",
+       "url":""
+    },
+    {
+       "id":14,
+       "title":"Right Palm",
+       "description":"Right Palm",
+       "amount": 1,
+       "version":"2.2.0",
+       "url":""
+    },
+    {
+       "id":15,
+       "title":"Right Palm",
+       "description":"Right Palm",
+       "amount": 1,
+       "version":"2.2.0",
+       "url":""
+    },
+    {
+       "id":15,
+       "title":"Proximal Phalange",
+       "description":"Proximal Phalange",
+       "amount": 5,
+       "version":"0.0.1",
+       "url":""
+    },
+    {
+       "id":16,
+       "title":"Tensioner Block",
+       "description":"Tensioner Block",
+       "amount": 1,
+       "version":"0.0.1",
+       "url":""
+    },
+    {
+       "id":17,
+       "title":"Tensioner Pin Medium 2.5mm",
+       "description":"Tensioner Pins Medium 2.5mm",
+       "amount": 1,
+       "version":"0.0.1",
+       "url":""
+    },
+    {
+       "id":18,
+       "title":"Thumb Pin",
+       "description":"Thumb Pins",
+       "amount": 1,
+       "version":"0.0.1",
+       "url":""
+    }
+  ]
+}
+ 

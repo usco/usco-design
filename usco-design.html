@@ -31,7 +31,7 @@
         if(this.bom) this.getMeshesFromBom();
       },
       getMeshesFromBom:function(){
-        var meshUrls = [];
+        var bomEntryToMeshUrls = {};
         //TODO : we need to match parts to their meshes ?
         for(var i = 0; i< this.bom.length;i++)
         {
@@ -41,10 +41,10 @@
           if(bomEntry.file_contains_3d_model && (bomEntry.name.toLowerCase().indexOf( "build plate" )==-1) )
           {
             var meshUrl = bomEntry.file.url;
-            meshUrls.push( meshUrl );
+            bomEntryToMeshUrls[bomEntry.id ]= meshUrl ;
           }
         }
-        console.log("meshUrls",meshUrls);
+        console.log("meshUrls",bomEntryToMeshUrls);
       }      
     });
     </script>
