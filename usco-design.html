@@ -8,7 +8,9 @@
       url:null,
       bom:null,
       urlChanged:function(){
-        documentsUrl= this.url + "documents.json";//https://www.youmagine.com/designs/beer-opener/documents.json
+        //documentsUrl= this.url + "documents.json";//https://www.youmagine.com/designs/beer-opener/documents.json
+        
+        bomUrl= this.url + "bom.json";//https://www.youmagine.com/designs/beer-opener/documents.json
         var self = this;
         
         
@@ -18,10 +20,10 @@
             if (xhr.readyState == 4) {
                 var parsed = JSON.parse(xhr.responseText);
                 console.log("parsed", parsed);
-                self.bom = parsed;
+                self.bom = parsed.bom;
             }
         }
-        xhr.open('GET', documentsUrl, true);
+        xhr.open('GET', bomUrl, true);
         xhr.send(null);
         
         
@@ -31,6 +33,23 @@
         if(this.bom) this.getMeshesFromBom();
       },
       getMeshesFromBom:function(){
+        var bomEntryToMeshUrls = {};
+        //TODO : we need to match parts to their meshes ?
+        for(var i = 0; i< this.bom.length;i++)
+        {
+          var bomEntry = this.bom[i];
+                    console.log("here",bomEntry);
+          //filtering VERY specific to current json structure, not ideal
+          //we also filter out anything with "build plate" in it
+          if(bomEntry.url != "" )
+          {
+            var meshUrl = bomEntry.url;
+            bomEntryToMeshUrls[bomEntry.id ]= meshUrl ;
+          }
+        }
+        console.log("meshUrls",bomEntryToMeshUrls);
+      }     ,
+      getMeshesFromBom_youmagine:function(){
         var bomEntryToMeshUrls = {};
         //TODO : we need to match parts to their meshes ?
         for(var i = 0; i< this.bom.length;i++)

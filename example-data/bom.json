@@ -59,7 +59,8 @@
             "description": "Finger tip, long",
             "amount": 1,
             "version": "0.0.1",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12167/Finger_tip_long__x1_.stl"
+            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12167/Finger_tip_long__x1_.stl",
+            "thumbnailUrl":""
         },
         {
             "id": 8,
@@ -67,7 +68,8 @@
             "description": "Finger tip, medium",
             "amount": 3,
             "version": "0.0.1",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12168/Finger_tip_medium__x3_.stl"
+            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12168/Finger_tip_medium__x3_.stl",
+            "thumbnailUrl":""
         },
         {
             "id": 9,
@@ -75,7 +77,8 @@
             "description": "Gauntlet",
             "amount": 1,
             "version": "0.0.1",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12169/Finger_tip_short__x1_.stl"
+            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12169/Finger_tip_short__x1_.stl",
+            "thumbnailUrl":""
         },
         {
             "id": 10,
@@ -83,7 +86,8 @@
             "description": "Hinge Caps",
             "amount": 1,
             "version": "0.0.1",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12171/Hinge_Caps__x1_.stl"
+            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12171/Hinge_Caps__x1_.stl",
+            "thumbnailUrl":""
         },
         {
             "id": 11,
@@ -91,7 +95,8 @@
             "description": "Hinge Pins",
             "amount": 1,
             "version": "0.0.1",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12172/Hinge_Pins__x1_.stl"
+            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12172/Hinge_Pins__x1_.stl",
+            "thumbnailUrl":""
         },
         {
             "id": 12,
@@ -99,7 +104,8 @@
             "description": "Knuckle Pins",
             "amount": 1,
             "version": "0.0.1",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12173/Knuckle_Pins__x1_.stl"
+            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12173/Knuckle_Pins__x1_.stl",
+            "thumbnailUrl":""
         },
         {
             "id": 13,
@@ -107,7 +113,8 @@
             "description": "Left Palm",
             "amount": 1,
             "version": "2.2.0",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12730/PalmLeft_2.2__x1_.stl"
+            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12730/PalmLeft_2.2__x1_.stl",
+            "thumbnailUrl":""
         },
         {
             "id": 14,
@@ -115,7 +122,8 @@
             "description": "Right Palm",
             "amount": 1,
             "version": "2.2.0",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12731/PalmRight_2.2__x1_.stl"
+            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12731/PalmRight_2.2__x1_.stl",
+            "thumbnailUrl":""
         },
         {
             "id": 15,
@@ -123,7 +131,8 @@
             "description": "Proximal Phalange",
             "amount": 5,
             "version": "0.0.1",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12177/Proximal_Phalange__x5_.stl"
+            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12177/Proximal_Phalange__x5_.stl",
+            "thumbnailUrl":""
         },
         {
             "id": 16,
@@ -131,7 +140,8 @@
             "description": "Tensioner Block",
             "amount": 1,
             "version": "0.0.1",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12178/Tensioner_block__x1_.stl"
+            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12178/Tensioner_block__x1_.stl",
+            "thumbnailUrl":""
         },
         {
             "id": 17,
@@ -139,7 +149,8 @@
             "description": "Tensioner Pins Medium 2.5mm",
             "amount": 1,
             "version": "0.0.1",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12179/Tensioner_Pins-Medium__2.5mm___x1_.stl"
+            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12179/Tensioner_Pins-Medium__2.5mm___x1_.stl",
+            "thumbnailUrl":""
         },
         {
             "id": 18,
@@ -147,7 +158,8 @@
             "description": "Thumb Pins",
             "amount": 1,
             "version": "0.0.1",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12180/Thumb_Pin__x1_.stl"
+            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12180/Thumb_Pin__x1_.stl",
+            "thumbnailUrl":""
         }
     ]
 }
