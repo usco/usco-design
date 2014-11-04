@@ -1,0 +1,7 @@
+{"annotations" : 
+  [
+    {"partId":0 , "type":"point", "title":"Goomba","text":"Interesting", "position":[20,32,3], "author":"", "url":""},
+    {"partId":1 , "type":"point", "title":"Crux", "text":"This is some trully remarquable engineering!", "position":[-20,-16,6],"orientation":[0,1,0], "author":"", "url":""},
+  ]
+        
+}
