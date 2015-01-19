@@ -28,5 +28,7 @@ Questions:
  * perhaps parametric designs can generate their own assembly datastructure on the fly?
 - connectors: should connectors be specified at the assembly level or elsewhere
 - also, should joints be specified in assemblies ?
+- any partId with an id higher than the last item in the bom is an
+ "assembled/composite part " ?
 
 

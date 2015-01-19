@@ -66,8 +66,24 @@ Example data structure:
          "amount": 1,
          "unit":"EA",
          "url":"palm.scad",
-         "parameters":"{orientation:"Right",innerSize:25}"
+         "parameters":"{orientation:'Right',innerSize:25}",
+         
       }
+
+  Possible data structure for pre-generated stl from a parametric design
+  -----------------------------------------------------------------------
+  
+         {
+           "id":15,
+           "title":"Palm",
+           "version":"2.2.0",
+           "description":"Right Palm",
+           "amount": 1,
+           "unit":"EA",
+           "sourceUrl":"palm.scad",
+           "url":"palm_x_x_x.stl",
+           "parameters":"{orientation:'Right',innerSize:25}"
+         }
 
 
 Tooling:

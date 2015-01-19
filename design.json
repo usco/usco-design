@@ -1,25 +1,25 @@
 {
   "id":"cfdd4dbf-9e80-45a7-b59e-daf52d14fc3a",
   "name":"roboto",
+  "version": "0.0.2",
+  "private": true,
   "description": "some awesome design",
-  
-  "thumbnail-urls":[
-    
-  ],
-  
+  "url":"youmagine.com/designs/authorName/roboto",
   "authors":[
    {
     "name":"Mark kaosat-dev",
     "url": "???"
    }
   ],
-  "tags": ["youmagine", "superduperdesign"],
   "licenses":[
     "GPLV3",
     "MIT"
   ],
-  
-  "metadata":{
-    "state":"design"
-  }
+  "tags": ["youmagine", "superduperdesign"],
+  "meta":{
+    "state":"design",
+    "color": "#0ca9e3"
+  },
+  "thumbnail-urls":[
+  ],
 }

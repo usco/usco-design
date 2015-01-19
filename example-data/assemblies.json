@@ -3,6 +3,11 @@
             "name":"raptor-hand",
             
             "children":[
+              {
+                "name":"Palm",
+                "partId":14
+                
+              },
              {
               "name":"Thumb",
               "partNumber":0,
