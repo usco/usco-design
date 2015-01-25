@@ -143,12 +143,20 @@ update jan 19 th 2015
 =====================
 
 - a "design" is pretty much like a (bower/npm) package
+- a "design should be forkable"
 
 - semantic versioning and purely visual/static design : perhaps ANY change could be considered
 a breaking api change ? what is an api in the case of  a visual design ? 
 perhaps simply "if you can replace 'as is' the old part with the new, without any additional
 changed, then it is not a breaking change ?
 
+
+- essential fields to find a good design : 
+  * users evaluation/ rating (levels are better than just likes ?)
+  * last update date (to prune/reject stale designs)
+  * forks
+  * author (s) (tendency to favor "miracle workers" ? )
+  
 
 RANDOM IDEAS
 ------------
