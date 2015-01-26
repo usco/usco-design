@@ -1,7 +1,68 @@
-{"annotations" : 
-  [
-    {"partId":0 , "type":"point", "title":"Goomba","text":"Interesting", "position":[20,32,3], "author":"", "url":""},
-    {"partId":1 , "type":"point", "title":"Crux", "text":"This is some trully remarquable engineering!", "position":[-20,-16,6],"orientation":[0,1,0], "author":"", "url":""},
-  ]
-        
-}
+[
+  {
+    "type":"note",
+    "value":"",
+    "title":"",
+    "object":103696626,
+    "position":[0.17,4,0],
+    "uuid":"01ECDC75-3D53-4245-9324-F7350761B44C",
+    "name":"N1",
+    "notes":"",
+    "varName":""
+  },
+  {
+    "type":"angle",
+    "value":2.4,
+    "start":[6.60,-37.06,50],"mid":[32.14,-18.50],"end":[42.97,19,50],
+    "startObject":-450031670,
+    "midObject":-450031670,
+    "endObject":-450031670,
+    "partId":-450031670,
+    "uuid":"0B63947D-59BC-4C2B-97A5-D6854F69E61F",
+    "name":"A1",
+    "notes":"",
+    "title":"",
+    "varName":""},
+  {
+    "type":"diameter",
+    "value":14.67,
+    "center":[-22.02,-2.97,50],
+    "orientation":[0,0,1],
+    "object":-450031670,
+    "uuid":"4EDD844F-926A-4BDC-A9B3-C222333F2531",
+    "name":"D1",
+    "notes":"",
+    "title":"",
+    "varName":""},
+   {
+    "type":"distance",
+    "value":23.83,
+    "start":[15.1,-30,14],
+    "end":[9.44,-13,29],
+    "startObject":1664839928,
+    "endObject":-679498544,
+    "uuid":"D5742703-8D37-451E-8B6C-35A151855C03",
+    "name":"D1",
+    "notes":"",
+    "title":"",
+    "varName":""},
+   
+   {
+    "type":"thickness",
+    "value":14,
+    "object":1664839928,
+    "normal":[0,0,1],
+    "position":[16,-15,6],
+    "uuid":"EB09CD82-E169-44B9-AA32-1BB4503C99E0",
+    "name":"T1",
+    "notes":"",
+    "title":"",
+    "varName":""
+   }
+   
+]
+
+
+
+
+
