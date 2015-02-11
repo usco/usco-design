@@ -73,17 +73,45 @@ Example data structure:
   Possible data structure for pre-generated stl from a parametric design
   -----------------------------------------------------------------------
   
-         {
+          {
            "id":15,
            "title":"Palm",
            "version":"2.2.0",
            "description":"Right Palm",
            "amount": 1,
            "unit":"EA",
-           "sourceUrl":"palm.scad",
-           "url":"palm_x_x_x.stl",
-           "parameters":"{orientation:'Right',innerSize:25}"
-         }
+           "implementations": [
+              {"hand.scad":"palm_x_x_x.stl"}
+            ],
+           "parameters":"{type:'palm',orientation:'Right',innerSize:25}"
+         },
+         
+            {
+           "id":16,
+           "title":"Thumb",
+           "version":"2.2.0",
+           "description":"Thumb",
+           "amount": 2,
+           "unit":"EA",
+           "implementations": {
+              "src/hand.scad":"assets/thumb_x_x_x.stl",
+              "src/hand.freecad":"assets/thumb_x_x_x_free.stl"
+            },
+           "parameters":"{type:'thumb',orientation:'Right',innerSize:25}"
+         },
+         
+          {
+           "id":17,
+           "title":"Thumb",
+           "version":"2.2.0",
+           "description":"Thumb",
+           "amount": 2,
+           "unit":"EA",
+           "implementations": {
+            "default":"bla.stl"}
+         },
+         
+         
 
 
 Tooling:
