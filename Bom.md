@@ -80,9 +80,8 @@ Example data structure:
            "description":"Right Palm",
            "amount": 1,
            "unit":"EA",
-           "implementations": [
-              {"hand.scad":"palm_x_x_x.stl"}
-            ],
+           "implementations": 
+            {"hand.scad":"palm_x_x_x.stl"},
            "parameters":"{type:'palm',orientation:'Right',innerSize:25}"
          },
          

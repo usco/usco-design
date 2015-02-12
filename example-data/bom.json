@@ -64,8 +64,9 @@
             "amount": 1,
             "unit":"EA",
             "version": "0.0.1",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12167/Finger_tip_long__x1_.stl",
-            "thumbnailUrl":""
+            "implementations": {
+              "default":"Finger_tip_long.stl"
+            }
         },
         {
             "id": 8,
@@ -74,8 +75,9 @@
             "amount": 3,
             "unit":"EA",
             "version": "0.0.1",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12168/Finger_tip_medium__x3_.stl",
-            "thumbnailUrl":""
+            "implementations": {
+              "default":"Finger_tip_medium.stl"
+            }
         },
         {
             "id": 9,
@@ -84,8 +86,9 @@
             "amount": 1,
             "unit":"EA",
             "version": "0.0.1",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12169/Finger_tip_short__x1_.stl",
-            "thumbnailUrl":""
+            "implementations": {
+              "default":"Finger_tip_short_Caps.stl"
+            }
         },
         {
             "id": 10,
@@ -94,8 +97,9 @@
             "amount": 1,
             "unit":"EA",
             "version": "0.0.1",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12171/Hinge_Caps__x1_.stl",
-            "thumbnailUrl":""
+            "implementations": {
+              "default":"Hinge_Caps.stl"
+            }
         },
         {
             "id": 11,
@@ -104,8 +108,9 @@
             "amount": 1,
             "unit":"EA",
             "version": "0.0.1",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12172/Hinge_Pins__x1_.stl",
-            "thumbnailUrl":""
+            "implementations": {
+              "default":"Hinge_Pins__x1_.stl"
+            }
         },
         {
             "id": 12,
@@ -114,8 +119,9 @@
             "amount": 1,
             "unit":"EA",
             "version": "0.0.1",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12173/Knuckle_Pins__x1_.stl",
-            "thumbnailUrl":""
+            "implementations": {
+              "default":"Knuckle_Pins__x1_.stl"
+            },
         },
         {
             "id": 13,
@@ -124,8 +130,10 @@
             "amount": 1,
             "unit":"EA",
             "version": "2.2.0",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12730/PalmLeft_2.2__x1_.stl",
-            "thumbnailUrl":""
+            "implementations": {
+              "src/hand.scad":"PalmLeft_2.2__x1_.stl"
+            },
+            "parameters":"{type:'leftPalm',orientation:'Top',innerSize:25}"
         },
         {
             "id": 14,
@@ -134,8 +142,10 @@
             "amount": 1,
             "unit":"EA",
             "version": "2.2.0",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12731/PalmRight_2.2__x1_.stl",
-            "thumbnailUrl":""
+            "implementations": {
+              "src/hand.scad": "PalmRight_2.2__x1_.stl"
+            },
+            "parameters":"{type:'rightPalm',orientation:'Right',innerSize:25}"
         },
         {
             "id": 15,
@@ -144,8 +154,9 @@
             "amount": 5,
             "unit":"EA",
             "version": "0.0.1",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12177/Proximal_Phalange__x5_.stl",
-            "thumbnailUrl":""
+            "implementations": {
+              "default": "Proximal_Phalange__x5_.stl"
+            }
         },
         {
             "id": 16,
@@ -154,8 +165,9 @@
             "amount": 1,
             "unit":"EA",
             "version": "0.0.1",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12178/Tensioner_block__x1_.stl",
-            "thumbnailUrl":""
+            "implementations": {
+              "default": "Tensioner_block__x1_.stl"
+            }
         },
         {
             "id": 17,
@@ -164,8 +176,9 @@
             "amount": 1,
             "unit":"EA",
             "version": "0.0.1",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12179/Tensioner_Pins-Medium__2.5mm___x1_.stl",
-            "thumbnailUrl":""
+            "implementations": {
+              "default":"Tensioner_Pins-Medium__2.5mm___x1_.stl"
+            }
         },
         {
             "id": 18,
@@ -174,8 +187,9 @@
             "amount": 1,
             "unit":"EA",
             "version": "0.0.1",
-            "url": "https://d36c0vbvwjb9cx.cloudfront.net/uploads/document/file/12180/Thumb_Pin__x1_.stl",
-            "thumbnailUrl":""
+            "implementations": {
+              "default":"Thumb_Pin__x1_.stl"
+            }
         }
     ]
 }
