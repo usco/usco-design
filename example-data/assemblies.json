@@ -1,12 +1,12 @@
 {
     "assembly": {
-            "name":"raptor-hand",
+            "name":"raptor-hand-assembled",
             
             "children":[
               {
                 "name":"Palm",
-                "partId":14
-                
+                "partId":14,
+                "rotation":[10,0,0]
               },
              {
               "name":"Thumb",
@@ -16,9 +16,5 @@
               }
             ]
     },
-    
-    "buildPlate":{
-    
-    }
 }
             

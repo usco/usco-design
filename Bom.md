@@ -4,18 +4,35 @@ Notes about BOM:
 - printed parts need to be included in the dom : (how else would one know how many
 of each to print ?)
 
-- titles/name should be singular in 99% of cases : they are title for a single unit
+- flat vs tree: flat is better, what are the use cases for a tree ? 
 
-- versioning : a bom entry for versionable parts should always contain a version number
+- titles/name should be singular in 99% of cases : they are title for a single unit
+  HOWEVER :
+    **both are needed** : title is the human readeable string , while name is meant as
+    machine useable (but somewhat human readable)
+
+- versioning : a bom entry for **versionable parts** should always contain a version number
  * version number SHOULD use semantic versioning (minor, major, patch)
 
 - amounts vs lengths vs weight etc :
+  * ie how do you describe "15 pieces of string of 15cm each"
   * both are needed: they describe different things: the size of each "stuff"
-  * even better: lengths, weights should describe atomic stuff
+  * (not sure about this) even better: lengths, weights should describe atomic stuff
+  
+    > **SPEC v1:**
+    > 
+    > - **amount** for ... amounts 
+    > - **size** for the distances, weight etc
+  	>
+
 
 - local vs global ids:
  * both are needed : local ids to reference things within the local context
  * global ids are needed to have trully unique ids
+  
+  	> **SPEC v1:**
+    > - global ids (uuids) are now called **uid** in the bom
+  	>
 
 - a bom entry can either describe an "end product" (leaf) like a 3d printed mesh, a nut,
 a bolt etc,  or a composite (another composite etc), see 
@@ -23,11 +40,17 @@ https://github.com/garyhodgson/thing-tracker-network/wiki/Ideas-for-BOMs,-Sub-as
 
 - alternatives: how to handle alternative parts ?
  * ex : left palm/right palm
+ * ??????
 
 - parameters for parametric designs:
   * how to handle pre-generated stls from parametric designs vs the parametric designs with 
 a given set of params ?
   * parts which use the same parametric design #with different parameters# need different 
+  
+  > **SPEC v1:**
+  >  - **parameters** field can be added per bom entry
+  >
+
 
 - gcode/machine presets:
   * this should be optional
@@ -37,13 +60,13 @@ a given set of params ?
 
 - parts libraries: extremely important , see parts librairies section in this document
 
-- the thing-tracker spec already has a lot of these things and is adaptable: DO NOT reinvent
-the wheel
- * ttn is allready adopted 
- * spec can still be updated at this stage
- * lots of sane design decisions
- * "Bolts" librairy will be available through it: see below
- * https://github.com/garyhodgson/thing-tracker-network/wiki/Conventions-and-Guidelines 
+	> **NOTES** 
+    > 
+    > the Thing-Tracker-Network spec already has a lot of these things and is adaptable: DO NOT reinvent the wheel (if possible)
+ 	> * spec can still be updated at this stage
+	> * lots of sane design decisions
+    > * "Bolts" library will be available through it: see below
+    > * https://github.com/garyhodgson/thing-tracker-network/wiki/Conventions-and-Guidelines 
 
 
 Part librairies:
@@ -55,7 +78,29 @@ librairy http://www.bolts-library.org/en/index.html already has most of the data
 and "bindings" (openscad, freecad etc) that are needed
 
 
-Example data structure:
+
+Referencing external parts??
+============================
+- closely related to "part librairies" above
+- simple url is sufficient to point to another design ?
+
+- **important** : a BOM might have overlaps with the design.json dependencies field,
+but a BOM only describes "concrete" things: ie
+  * even if your parametric design for PART-A makes use of 2 different other designs, (all referenced as dependencies in the dependencies fields), it does not mean they show up in the BOM !
+  
+  simple example : 
+   * you are creating an enclosure for a raspberry-pi
+   * somebody provides a design package for a fully modelled raspi called "raspi"
+   * your design.json might look like
+     
+   		{
+        
+        
+        }
+
+
+
+Example data structures:
 =======================
 
       {
@@ -92,9 +137,10 @@ Example data structure:
            "description":"Thumb",
            "amount": 2,
            "unit":"EA",
+           "url": "bla.com/designs/thumb"
            "implementations": {
-              "src/hand.scad":"assets/thumb_x_x_x.stl",
-              "src/hand.freecad":"assets/thumb_x_x_x_free.stl"
+              "src/hand.scad":"assets/thumb_2.2.0_scad.stl",
+              "src/hand.freecad":"assets/thumb_2.2.0_freecad.stl"
             },
            "parameters":"{type:'thumb',orientation:'Right',innerSize:25}"
          },
@@ -109,10 +155,21 @@ Example data structure:
            "implementations": {
             "default":"bla.stl"}
          },
+         //reference other design, not local ?
+          {
+           "id":18,
+           "title":"Special",
+           "version":"0.2.0",
+           "description":"Some special stuff",
+           "amount": 1,
+           "unit":"EA",
+           "implementations": {
+            "default":"https://foobar.com/designs/special"}
+         },
          
          
 
 
 Tooling:
 ========
-- a small tool could be provided to help add bom entries (rather trivial)
+- a small tool could be provided to help add bom entries 

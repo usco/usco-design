@@ -1,0 +1,15 @@
+{
+    "bom": [
+        {
+            "id": 0,
+            "name": "MainWheel",
+            "title":"human readable text",
+            "description": "the main , driven wheels",
+            "amount": 2,
+            "unit": "EA",
+            "implementations": {
+              "mainWheel/hand.scad":"assets/thumb_2.2.0_scad.stl",
+            },
+        }
+    ]
+}
