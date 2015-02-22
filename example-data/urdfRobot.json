@@ -1,0 +1,331 @@
+{
+  "robot": {
+    "-name": "visual",
+    "link": [
+      {
+        "-name": "base_link",
+        "visual": {
+          "geometry": {
+            "cylinder": {
+              "-length": "0.6",
+              "-radius": "0.2"
+            }
+          },
+          "material": {
+            "-name": "blue",
+            "color": { "-rgba": "0 0 .8 1" }
+          }
+        }
+      },
+      {
+        "-name": "right_leg",
+        "visual": {
+          "geometry": {
+            "box": { "-size": "0.6 .2 .1" }
+          },
+          "origin": {
+            "-rpy": "0 1.57075 0",
+            "-xyz": "0 0 -0.3"
+          },
+          "material": {
+            "-name": "white",
+            "color": { "-rgba": "1 1 1 1" }
+          }
+        }
+      },
+      {
+        "-name": "right_base",
+        "visual": {
+          "geometry": {
+            "box": { "-size": ".1 0.4 .1" }
+          },
+          "material": { "-name": "white" }
+        }
+      },
+      {
+        "-name": "right_front_wheel",
+        "visual": {
+          "geometry": {
+            "cylinder": {
+              "-length": ".1",
+              "-radius": "0.035"
+            }
+          },
+          "material": {
+            "-name": "black",
+            "color": { "-rgba": "0 0 0 1" }
+          }
+        }
+      },
+      {
+        "-name": "right_back_wheel",
+        "visual": {
+          "geometry": {
+            "cylinder": {
+              "-length": ".1",
+              "-radius": "0.035"
+            }
+          },
+          "material": { "-name": "black" }
+        }
+      },
+      {
+        "-name": "left_leg",
+        "visual": {
+          "geometry": {
+            "box": { "-size": "0.6 .2 .1" }
+          },
+          "origin": {
+            "-rpy": "0 1.57075 0",
+            "-xyz": "0 0 -0.3"
+          },
+          "material": { "-name": "white" }
+        }
+      },
+      {
+        "-name": "left_base",
+        "visual": {
+          "geometry": {
+            "box": { "-size": ".1 0.4 .1" }
+          },
+          "material": { "-name": "white" }
+        }
+      },
+      {
+        "-name": "left_front_wheel",
+        "visual": {
+          "geometry": {
+            "cylinder": {
+              "-length": ".1",
+              "-radius": "0.035"
+            }
+          },
+          "material": { "-name": "black" }
+        }
+      },
+      {
+        "-name": "left_back_wheel",
+        "visual": {
+          "geometry": {
+            "cylinder": {
+              "-length": ".1",
+              "-radius": "0.035"
+            }
+          },
+          "material": { "-name": "black" }
+        }
+      },
+      {
+        "-name": "gripper_pole",
+        "visual": {
+          "geometry": {
+            "cylinder": {
+              "-length": "0.2",
+              "-radius": ".01"
+            }
+          },
+          "origin": {
+            "-rpy": "0 1.57075 0 ",
+            "-xyz": "0.1 0 0"
+          },
+          "material": {
+            "-name": "Gray",
+            "color": { "-rgba": ".7 .7 .7 1" }
+          }
+        }
+      },
+      {
+        "-name": "left_gripper",
+        "visual": {
+          "origin": {
+            "-rpy": "0.0 0 0",
+            "-xyz": "0 0 0"
+          },
+          "geometry": {
+            "mesh": { "-filename": "package://pr2_description/meshes/gripper_v0/l_finger.dae" }
+          }
+        }
+      },
+      {
+        "-name": "left_tip",
+        "visual": {
+          "origin": {
+            "-rpy": "0.0 0 0",
+            "-xyz": "0.09137 0.00495 0"
+          },
+          "geometry": {
+            "mesh": { "-filename": "package://pr2_description/meshes/gripper_v0/l_finger_tip.dae" }
+          }
+        }
+      },
+      {
+        "-name": "right_gripper",
+        "visual": {
+          "origin": {
+            "-rpy": "-3.1415 0 0",
+            "-xyz": "0 0 0"
+          },
+          "geometry": {
+            "mesh": { "-filename": "package://pr2_description/meshes/gripper_v0/l_finger.dae" }
+          }
+        }
+      },
+      {
+        "-name": "right_tip",
+        "visual": {
+          "origin": {
+            "-rpy": "-3.1415 0 0",
+            "-xyz": "0.09137 0.00495 0"
+          },
+          "geometry": {
+            "mesh": { "-filename": "package://pr2_description/meshes/gripper_v0/l_finger_tip.dae" }
+          }
+        }
+      },
+      {
+        "-name": "head",
+        "visual": {
+          "geometry": {
+            "sphere": { "-radius": "0.2" }
+          },
+          "material": { "-name": "white" }
+        }
+      },
+      {
+        "-name": "box",
+        "visual": {
+          "geometry": {
+            "box": { "-size": ".08 .08 .08" }
+          },
+          "material": { "-name": "blue" }
+        }
+      }
+    ],
+    "joint": [
+      {
+        "-name": "base_to_right_leg",
+        "-type": "fixed",
+        "parent": { "-link": "base_link" },
+        "child": { "-link": "right_leg" },
+        "origin": { "-xyz": "0.22 0 .25" }
+      },
+      {
+        "-name": "right_base_joint",
+        "-type": "fixed",
+        "parent": { "-link": "right_leg" },
+        "child": { "-link": "right_base" },
+        "origin": { "-xyz": "0 0 -0.6" }
+      },
+      {
+        "-name": "right_front_wheel_joint",
+        "-type": "fixed",
+        "parent": { "-link": "right_base" },
+        "child": { "-link": "right_front_wheel" },
+        "origin": {
+          "-rpy": "0 1.57075 0",
+          "-xyz": "0 0.133333333333 -0.085"
+        }
+      },
+      {
+        "-name": "right_back_wheel_joint",
+        "-type": "fixed",
+        "parent": { "-link": "right_base" },
+        "child": { "-link": "right_back_wheel" },
+        "origin": {
+          "-rpy": "0 1.57075 0",
+          "-xyz": "0 -0.133333333333 -0.085"
+        }
+      },
+      {
+        "-name": "base_to_left_leg",
+        "-type": "fixed",
+        "parent": { "-link": "base_link" },
+        "child": { "-link": "left_leg" },
+        "origin": { "-xyz": "-0.22 0 .25" }
+      },
+      {
+        "-name": "left_base_joint",
+        "-type": "fixed",
+        "parent": { "-link": "left_leg" },
+        "child": { "-link": "left_base" },
+        "origin": { "-xyz": "0 0 -0.6" }
+      },
+      {
+        "-name": "left_front_wheel_joint",
+        "-type": "fixed",
+        "parent": { "-link": "left_base" },
+        "child": { "-link": "left_front_wheel" },
+        "origin": {
+          "-rpy": "0 1.57075 0",
+          "-xyz": "0 0.133333333333 -0.085"
+        }
+      },
+      {
+        "-name": "left_back_wheel_joint",
+        "-type": "fixed",
+        "parent": { "-link": "left_base" },
+        "child": { "-link": "left_back_wheel" },
+        "origin": {
+          "-rpy": "0 1.57075 0",
+          "-xyz": "0 -0.133333333333 -0.085"
+        }
+      },
+      {
+        "-name": "gripper_extension",
+        "-type": "fixed",
+        "parent": { "-link": "base_link" },
+        "child": { "-link": "gripper_pole" },
+        "origin": {
+          "-rpy": "0 0 1.57075",
+          "-xyz": "0 0.19 .2"
+        }
+      },
+      {
+        "-name": "left_gripper_joint",
+        "-type": "fixed",
+        "origin": {
+          "-rpy": "0 0 0",
+          "-xyz": "0.2 0.01 0"
+        },
+        "parent": { "-link": "gripper_pole" },
+        "child": { "-link": "left_gripper" }
+      },
+      {
+        "-name": "left_tip_joint",
+        "-type": "fixed",
+        "parent": { "-link": "left_gripper" },
+        "child": { "-link": "left_tip" }
+      },
+      {
+        "-name": "right_gripper_joint",
+        "-type": "fixed",
+        "origin": {
+          "-rpy": "0 0 0",
+          "-xyz": "0.2 -0.01 0"
+        },
+        "parent": { "-link": "gripper_pole" },
+        "child": { "-link": "right_gripper" }
+      },
+      {
+        "-name": "right_tip_joint",
+        "-type": "fixed",
+        "parent": { "-link": "right_gripper" },
+        "child": { "-link": "right_tip" }
+      },
+      {
+        "-name": "head_swivel",
+        "-type": "fixed",
+        "parent": { "-link": "base_link" },
+        "child": { "-link": "head" },
+        "origin": { "-xyz": "0 0 0.3" }
+      },
+      {
+        "-name": "tobox",
+        "-type": "fixed",
+        "parent": { "-link": "head" },
+        "child": { "-link": "box" },
+        "origin": { "-xyz": "0 0.1414 0.1414" }
+      }
+    ]
+  }
+}

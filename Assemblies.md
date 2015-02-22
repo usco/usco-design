@@ -30,5 +30,25 @@ Questions:
 - also, should joints be specified in assemblies ?
 - any partId with an id higher than the last item in the bom is an
  "assembled/composite part " ?
+ 
+ 
+Possible source of reuse/inspirations
+-------------------------------------
+
+- urdf file http://wiki.ros.org/urdf & similar formats 
+  Interesting points: 
+  - it is not a scene graph per se, but a more flat descriptive format
+  https://github.com/ros/urdf_tutorial/blob/master/urdf/05-visual.urdf
+  - parent child relationships are described **as joints of various types**, which could be
+  VERY usefull for E-nable like & small robotics projects etc , the available joint types are:
+  
+      * revolute - a hinge joint that rotates along the axis and has a limited range specified by the upper and lower limits.
+      * continuous - a continuous hinge joint that rotates around the axis and has no upper and lower limits
+      * prismatic - a sliding joint that slides along the axis, and has a limited range specified by the upper and lower limits.
+      * fixed - This is not really a joint because it cannot move. All degrees of freedom are locked. This type of joint does not require the axis, calibration, dynamics, limits or safety_controller.
+      * floating - This joint allows motion for all 6 degrees of freedom.
+      * planar - This joint allows motion in a plane perpendicular to the axis.
+  
+  
 
 

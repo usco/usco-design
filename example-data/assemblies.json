@@ -1,20 +1,21 @@
 {
     "assembly": {
-            "name":"raptor-hand-assembled",
-            
-            "children":[
-              {
-                "name":"Palm",
-                "partId":14,
-                "rotation":[10,0,0]
-              },
-             {
-              "name":"Thumb",
-              "partNumber":0,
-              "position":[10,0,0],
-              "children":[]
-              }
-            ]
+      "name":"raptor-hand-assembled",
+      "children":[
+        {
+          "uid":"7c7b8605-dcd2-41f1-a913-4ecc0215b299",
+          "partId":14,
+          "name":"Palm",
+          "rotation":[10,0,0]
+        },
+       {
+          "uid":"24f9203a-c5ed-4174-a446-e82597d28dbc",
+          "partId":0,
+          "name":"Thumb",
+          "position":[10,0,0],
+          "children":[]
+        }
+      ]
     },
 }
             

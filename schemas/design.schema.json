@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "properties": {
+    "uid": {
+      "id": "uid",
+      "type": "string"
+    },
+    "name": {
+      "id": "name",
+      "type": "string"
+    },
+    "title": {
+      "id": "title",
+      "type": "string"
+    },
+    "description": {
+      "id": "description",
+      "type": "string"
+    },
+    "version": {
+      "id": "version",
+      "type": "string"
+    },
+    "url": {
+      "id": "url",
+      "type": "string"
+    },
+    "authors": {
+      "id": "authors",
+      "type": "array",
+      "items": {
+        "id": "0",
+        "type": "object",
+        "properties": {
+          "name": {
+            "id": "name",
+            "type": "string"
+          },
+          "url": {
+            "id": "url",
+            "type": "string"
+          },
+          "email": {
+            "id": "email",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "tags": {
+      "id": "tags",
+      "type": "array",
+      "items": {
+        "id": "1",
+        "type": "string"
+      }
+    },
+    "licenses": {
+      "id": "licenses",
+      "type": "array",
+      "items": {
+        "id": "1",
+        "type": "string"
+      }
+    },
+    "meta": {
+      "id": "meta",
+      "type": "object",
+      "properties": {
+        "state": {
+          "id": "state",
+          "type": "string"
+        }
+      }
+    },
+    "dependencies": {
+      "id": "dependencies",
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "required": [
+    "name",
+    "title",
+    "version",
+    "url",
+    "authors",
+    "licenses",
+  ]
+}

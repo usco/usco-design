@@ -1,31 +1,33 @@
 {
-  "name":"SimpleRobot",
-  "uid":"e88ee964-2db5-4580-8da7-a2c722d7b7b8",
-  "description":"a simple robot",
-  "version": "0.0.2",
-  "url":"youmagine.com/designs/authorName/SimpleRobot",
-  "authors":[
-    {
-      "name":"otherGirl",
-    "url": "www.mysite.com",
-    "email":"gg@bar.baz"
+    "uid": "e88ee964-2db5-4580-8da7-a2c722d7b7b8",
+    "name": "SimpleRobot",
+    "title":"Simple roboto",
+    "description": "a simple robot",
+    "version": "0.0.2",
+    "url": "youmagine.com/designs/authorName/SimpleRobot",
+    "authors": [
+        {
+            "name": "otherGirl",
+            "url": "www.mysite.com",
+            "email": "gg@bar.baz"
+        },
+        {
+            "name": "otherGuy",
+            "url": "???",
+            "email": "aGuy@bar.baz"
+        }
+    ],
+    "tags": [
+        "robot",
+        "simple"
+    ],
+    "licenses": [
+        "GPLV3",
+        "MIT",
+        "CC-BY"
+    ],
+    "meta": {
+        "state": "design"
     },
-    {
-    "name":"otherGuy",
-    "url": "???",
-    "email":"aGuy@bar.baz"
-   }
-  ],
-   "tags": ["robot", "simple"],
-  "licenses":[
-    "GPLV3",
-    "MIT",
-    "CC-BY"
-  ],
-  "meta":{
-    "state":"design",
-  },
-  "dependencies":{
-  
-  }
+    "dependencies": {}
 }

@@ -1,5 +1,6 @@
 {
   "name":"RobotoMaging",
+  "title":"Robot maging",
   "description":"such a great design",
   "version": "0.0.2",
   "url":"youmagine.com/designs/authorName/RobotoMaging",
@@ -22,6 +23,6 @@
     "CC-BY"
   ],
   "meta":{
-    "state":"design",
+    "state":"design"
   },
 }
