@@ -91,13 +91,53 @@ but a BOM only describes "concrete" things: ie
   simple example : 
    * you are creating an enclosure for a raspberry-pi
    * somebody provides a design package for a fully modelled raspi called "raspi"
-   * your design.json might look like
-     
-   		{
-        
-        
-        }
+   * your design.json might look like (simplified)
+   
+   
+   	  {
+        	"name":"raspi-cool-case",
+            "title":"raspi cool case",
+            "description":"bla bla",
+  		  "version": "0.0.1",
+            "dependencies":{
+               "https://youmagine.com/designer/raspi":"0.1.0",
+               "https://youmagine.com/designer/BOLTS":"0.2.3"
+            }
+         }
 
+  * while your bom might look like this:
+    
+
+     {
+           "id":0,
+           "title":"Case bottom",
+           "name": "case-bottom",
+           "version":"0.0.1",
+           "description":"The enclosure's bottom",
+           "amount": 1,
+           "unit":"EA",
+           "implementations": 
+            {"cad/case.scad":"cad/case-bottom-0.0.1.stl"},
+           "parameters":"{type:'bottom'}"
+      },
+         
+      {
+           "id":1,
+           "title":"Case top",
+           "name": "case-top",
+           "version":"0.0.1",
+           "description":"The enclosure's top",
+           "amount": 1,
+           "unit":"EA",
+           "implementations": {
+              "cad/case.scad":"cad/case-top-0.0.1.stl",
+            },
+           "parameters":"{type:'top',gpio:false}"
+       },
+
+As you can see, the **raspi** design/package does not show up at all in the bom since it was very likely used only in the Openscad file to generate the enclosure.
+
+To make it clearer : ** a BOM only ever contains actual/ physical/ real objects that you used to build your design**
 
 
 Example data structures:
